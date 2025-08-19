@@ -55,27 +55,30 @@
       font-weight: 600;
     }
 
-    .entry {
-      display: flex;
-      align-items: center;
+    .talks-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .talk {
       margin-bottom: 28px;
     }
 
-    .entry-logo-wrapper {
-      width: 100px;
-      display: flex;
-      justify-content: flex-end;
-      margin-right: 20px;
+    .talk-title {
+      font-weight: bold;
+      display: block;
     }
 
-    .entry-logo-wrapper img {
-      max-height: 60px;
-      max-width: 100%;
-      object-fit: contain;
+    .talk-details {
+      font-weight: normal;
+      display: block;
     }
 
-    .entry-content {
-      flex: 1;
+    .talk-comment {
+      font-style: italic;
+      display: block;
+      margin-top: 2px;
     }
 
     a {
@@ -95,18 +98,6 @@
       text-align: center;
       color: #666;
     }
-
-    @media (max-width: 600px) {
-      .entry {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .entry-logo-wrapper {
-        justify-content: flex-start;
-        margin-bottom: 10px;
-      }
-    }
   </style>
 </head>
 <body>
@@ -120,208 +111,99 @@
 
     <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1Hc_8JT1NSE1yUT3beZC3MgB5AC5gm6Y&ehbc=2E312F" width="640" height="370"></iframe>
 
-    <!-- Talks List -->
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/kdd2025.png" alt="KDD 2025 Logo" />
-      </div>
-      <div class="entry-content">
-        <b>AI Teammates for the Modern Developer: Building Collaborative Coding Agents</b><br>
-        <a href="https://ai-reasoning.github.io/" target="_blank">Day on AI Reasoning</a> | August 2025<br>
-        <em>Co-presented by Shweta Garg</em><br>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/osu.svg" alt="Ohio State University Logo" />
-      </div>
-      <div class="entry-content">
-        <b>LLM Agents for Code Development</b><br>
-        The Ohio State University, Columbus, Ohio | March 2025
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/sapienza.png" alt="Sapienza Logo" />
-      </div>
-      <div class="entry-content">
-        <b>Optimal Interactions with LLMs</b><br>
-        Sapienza University of Rome, Italy | December 2023
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/ubc.png" alt="UBC Logo" />
-      </div>
-      <div class="entry-content">
-        <b>Interaction Learning</b><br>
-        The University of British Columbia | November 18, 2022
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/straps.png" alt="ICSOC Logo" />
-      </div>
-      <div class="entry-content">
-        <b>Enabling Interactivity between Human and Artificial Intelligence</b><br>
-        <a href="https://straps-workshop.github.io/#keynotes">2nd Workshop on Smart Data Integration and Processing on Service Based Environments (STRAPS 2020)</a> in conjunction with ICSOC 2020 | December 14, 2020
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/hpe.png" alt="HPE Logo" />
-      </div>
-      <div class="entry-content">
-        <b>Visual Formation and Comparison of Patient Cohorts</b><br>
-        <a href="http://www.festival-transfo.fr/evenement/116/14-vivre-dans-un-monde-en-constante-acceleration-1ere-partie.htm">HPE Innovation Day, Transfo Festival</a> | January 25, 2019
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/hpe.png" alt="HPE Logo" />
-      </div>
-      <div class="entry-content">
-        <b>Representation and Exploration of Patient Cohorts</b> <a href="https://youtu.be/XreoCaxIwqw">[video]</a><br>
-        <a href="http://www.festival-transfo.fr/evenement/116/14-vivre-dans-un-monde-en-constante-acceleration-1ere-partie.htm">HPE Innovation Day, Transfo Festival</a> (Jan 25, 2019), 
-        <a href="https://edu.univ-grenoble-alpes.fr/research-and-innovation/science-week/15-scientific-workshops-781962.htm?RH=320727468491450">Global Challenges Science Week, University of Grenoble Alpes</a> (June 3, 2019), 
-        TU Dortmund, Germany (Feb 21, 2019), 
-        MaDICS Workshop, Strasbourg (Nov 20, 2018), 
-        Center for Engineering and Health, Mines Engineering School of Saint-Etienne (Nov 12, 2018), 
-        Artificial Intelligence Committee, Lyon Hospital (Oct 22, 2018), 
-        5th International Conference on Data Science and Advanced Analytics (Oct 2, 2018), 
-        Workshop on Machine Learning and Statistics for Medical Data (Sept 21, 2018), 
-        AI Health Workshop in <a href="https://www.france-science.org/French-American-Doctoral-Exchange,9449.html">FADEX Doctoral Exchange Program</a> (June 27, 2018)
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/nle.jpg" alt="NAVER LABS Europe Logo" />
-      </div>
-      <div class="entry-content">
-        <b>Interactivity on Groups: Applications to Spatiotemporal Datasets</b><br>
-        <a href="http://www.europe.naverlabs.com">NAVER LABS Europe (NLE), Meylan, France</a> | September 2018
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/azad.png" alt="Azad University Logo" />
-      </div>
-      <div class="entry-content">
-        <b>Bridging the Gap between User Data Exploration and Information Visualization</b><br>
-        Azad University of Mashhad, Iran (December 2017), and Federal University of Rio Grande do Sul, Porto Alegre, Brazil (October 2017)
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/ferdowsi.jpg" alt="Ferdowsi University Logo" />
-      </div>
-      <div class="entry-content">
-        <b>Interactive Analysis of Spatiotemporal Data</b> [<a href="https://www.youtube.com/watch?v=Riwy-HeMN4E">video</a>]<br>
-        Ferdowsi University of Mashhad, Iran (Dec 2017)
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/brazil-north.png" />
-      </div>
-      <div class="entry-content">
-        <b>Interactive Analysis of Spatiotemporal Data</b> [<a href="https://www.youtube.com/watch?v=Riwy-HeMN4E">video</a>]<br>
-        Federal Institute of Rio Grande do Norte, Brazil (Oct 2017)
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/faa.png" alt="FAA Logo" />
-      </div>
-      <div class="entry-content">
-        <b>Interactive Analysis of Spatiotemporal Data</b> [<a href="https://www.youtube.com/watch?v=Riwy-HeMN4E">video</a>]<br>
-        <a href="https://discovery.osu.edu/tda/events/2017/05/04/interactive-analysis-of-spatiotemporal-data/">The Ohio State University</a> (May 2017), Coordination meeting with FAA Officials (April 2016)
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/osu.svg" alt="Ohio State University Logo" />
-      </div>
-      <div class="entry-content">
-        <b>Tools for Collaborative Research</b> [<a href="https://www.youtube.com/watch?v=4yXDnW1Sog4">video</a>]<br>
-        International Postdoctoral Association at The Ohio State University (November 2016)
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/twc2023.png" alt="Web Conference Logo" />
-      </div>
-      <div class="entry-content">
-        <b>Data-Informed Interaction Learning</b><br>
-        The Web Conference 2023
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/amazon.png" alt="Amazon Logo" />
-      </div>
-      <div class="entry-content">
-        <b>Towards Automating Interactions with Reinforcement Learning</b><br>
-        Amazon Machine Learning Conference 2022 <a href="https://www.amazon.science/working-at-amazon/amazons-internal-conferences-build-a-sense-of-community-kevin-small">[internal event]</a>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/rais.png" alt="RAIS Summer School Logo" />
-      </div>
-      <div class="entry-content">
-        <b>Exploratory Analysis of User Data</b> <a href="http://omidvar.info/presentations/RAIS-Course-May2021.pdf">[link to the slides]</a> (6-hour hands-on tutorial)<br>
-        <a href="https://rais-itn.eu/training-course/iot-analytics-research-and-innovation">RAIS summer school</a>, 17-19 May 2021
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/bda2019.png" alt="SIGMOD Logo" />
-      </div>
-      <div class="entry-content">
-        <b>Data Pipelines for User Group Analytics</b><br>
-        <a href="https://bda.liris.cnrs.fr/#section-programme" target=blank>French Conference on Management of Data (BDA) 2019</a>, Lyon, France<br>
-        <em>Co-presented by Sihem Amer-Yahia</em><br>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/sigmod2019.png" alt="SIGMOD Logo" />
-      </div>
-      <div class="entry-content">
-        <b>Data Pipelines for User Group Analytics</b><br>
-        <a href="http://sigmod2019.org/sigmod_tutorials" target=blank>International Conference on Management of Data (SIGMOD) 2019</a>, Amsterdam, The Netherlands<br>
-        <em>Co-presetented by Sihem Amer-Yahia</em><br>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-logo-wrapper">
-        <img src="logos/cikm2018.png" alt="CIKM Logo" />
-      </div>
-      <div class="entry-content">
-        <b><a href="https://sites.google.com/view/cikm">User Group Analytics: Discovery, Exploration and Visualization</a></b> <a href="https://dblp.uni-trier.de/rec/bibtex/conf/cikm/Omidvar-Tehrani18">[bibtex]</a><br>
-        <a href="https://www.cikm2018.units.it/tutorial3.html">Conference on Information and Knowledge Management (CIKM) 2018</a>, Torino, Italy<br>
-        <em>Co-presented by Sihem Amer-Yahia</em><br>
-      </div>
-    </div>
+    <!-- Talks List (Simplified) -->
+    <ul class="talks-list">
+      <li class="talk">
+        <span class="talk-title">AI Teammates for the Modern Developer: Building Collaborative Coding Agents</span>
+        <span class="talk-details"><a href="https://ai-reasoning.github.io/" target="_blank">Day on AI Reasoning</a> | August 2025</span>
+        <span class="talk-comment">Co-presented by Shweta Garg</span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">LLM Agents for Code Development</span>
+        <span class="talk-details">The Ohio State University, Columbus, Ohio | March 2025</span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">Optimal Interactions with LLMs</span>
+        <span class="talk-details">Sapienza University of Rome, Italy | December 2023</span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">Interaction Learning</span>
+        <span class="talk-details">The University of British Columbia | November 18, 2022</span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">Enabling Interactivity between Human and Artificial Intelligence</span>
+        <span class="talk-details"><a href="https://straps-workshop.github.io/#keynotes">2nd Workshop on Smart Data Integration and Processing on Service Based Environments (STRAPS 2020)</a> in conjunction with ICSOC 2020 | December 14, 2020</span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">Visual Formation and Comparison of Patient Cohorts</span>
+        <span class="talk-details"><a href="http://www.festival-transfo.fr/evenement/116/14-vivre-dans-un-monde-en-constante-acceleration-1ere-partie.htm">HPE Innovation Day, Transfo Festival</a> | January 25, 2019</span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">Representation and Exploration of Patient Cohorts <a href="https://youtu.be/XreoCaxIwqw">[video]</a></span>
+        <span class="talk-details">
+          <a href="http://www.festival-transfo.fr/evenement/116/14-vivre-dans-un-monde-en-constante-acceleration-1ere-partie.htm">HPE Innovation Day, Transfo Festival</a> (Jan 25, 2019), 
+          <a href="https://edu.univ-grenoble-alpes.fr/research-and-innovation/science-week/15-scientific-workshops-781962.htm?RH=320727468491450">Global Challenges Science Week, University of Grenoble Alpes</a> (June 3, 2019), 
+          TU Dortmund, Germany (Feb 21, 2019), 
+          MaDICS Workshop, Strasbourg (Nov 20, 2018), 
+          Center for Engineering and Health, Mines Engineering School of Saint-Etienne (Nov 12, 2018), 
+          Artificial Intelligence Committee, Lyon Hospital (Oct 22, 2018), 
+          5th International Conference on Data Science and Advanced Analytics (Oct 2, 2018), 
+          Workshop on Machine Learning and Statistics for Medical Data (Sept 21, 2018), 
+          AI Health Workshop in <a href="https://www.france-science.org/French-American-Doctoral-Exchange,9449.html">FADEX Doctoral Exchange Program</a> (June 27, 2018)
+        </span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">Interactivity on Groups: Applications to Spatiotemporal Datasets</span>
+        <span class="talk-details"><a href="http://www.europe.naverlabs.com">NAVER LABS Europe (NLE), Meylan, France</a> | September 2018</span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">Bridging the Gap between User Data Exploration and Information Visualization</span>
+        <span class="talk-details">Azad University of Mashhad, Iran (December 2017), and Federal University of Rio Grande do Sul, Porto Alegre, Brazil (October 2017)</span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">Interactive Analysis of Spatiotemporal Data <a href="https://www.youtube.com/watch?v=Riwy-HeMN4E">[video]</a></span>
+        <span class="talk-details">Ferdowsi University of Mashhad, Iran (Dec 2017)</span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">Interactive Analysis of Spatiotemporal Data <a href="https://www.youtube.com/watch?v=Riwy-HeMN4E">[video]</a></span>
+        <span class="talk-details">Federal Institute of Rio Grande do Norte, Brazil (Oct 2017)</span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">Interactive Analysis of Spatiotemporal Data <a href="https://www.youtube.com/watch?v=Riwy-HeMN4E">[video]</a></span>
+        <span class="talk-details"><a href="https://discovery.osu.edu/tda/events/2017/05/04/interactive-analysis-of-spatiotemporal-data/">The Ohio State University</a> (May 2017), Coordination meeting with FAA Officials (April 2016)</span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">Tools for Collaborative Research <a href="https://www.youtube.com/watch?v=4yXDnW1Sog4">[video]</a></span>
+        <span class="talk-details">International Postdoctoral Association at The Ohio State University (November 2016)</span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">Data-Informed Interaction Learning</span>
+        <span class="talk-details">The Web Conference 2023</span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">Towards Automating Interactions with Reinforcement Learning</span>
+        <span class="talk-details">Amazon Machine Learning Conference 2022 <a href="https://www.amazon.science/working-at-amazon/amazons-internal-conferences-build-a-sense-of-community-kevin-small">[internal event]</a></span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">Exploratory Analysis of User Data <a href="http://omidvar.info/presentations/RAIS-Course-May2021.pdf">[link to the slides]</a> (6-hour hands-on tutorial)</span>
+        <span class="talk-details"><a href="https://rais-itn.eu/training-course/iot-analytics-research-and-innovation">RAIS summer school</a>, 17-19 May 2021</span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">Data Pipelines for User Group Analytics</span>
+        <span class="talk-details"><a href="https://bda.liris.cnrs.fr/#section-programme" target=blank>French Conference on Management of Data (BDA) 2019</a>, Lyon, France</span>
+        <span class="talk-comment">Co-presented by Sihem Amer-Yahia</span>
+      </li>
+      <li class="talk">
+        <span class="talk-title">Data Pipelines for User Group Analytics</span>
+        <span class="talk-details"><a href="http://sigmod2019.org/sigmod_tutorials" target=blank>International Conference on Management of Data (SIGMOD) 2019</a>, Amsterdam, The Netherlands</span>
+        <span class="talk-comment">Co-presetented by Sihem Amer-Yahia</span>
+      </li>
+      <li class="talk">
+        <span class="talk-title"><a href="https://sites.google.com/view/cikm">User Group Analytics: Discovery, Exploration and Visualization</a> <a href="https://dblp.uni-trier.de/rec/bibtex/conf/cikm/Omidvar-Tehrani18">[bibtex]</a></span>
+        <span class="talk-details"><a href="https://www.cikm2018.units.it/tutorial3.html">Conference on Information and Knowledge Management (CIKM) 2018</a>, Torino, Italy</span>
+        <span class="talk-comment">Co-presented by Sihem Amer-Yahia</span>
+      </li>
+    </ul>
 
     <footer>
       &copy; Behrooz Omidvar-Tehrani 2025
